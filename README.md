@@ -1,5 +1,5 @@
 
-The Biota Computer
+# The Biota Computer
 by Ward Cunningham
 
 
@@ -9,7 +9,7 @@ that can be incremented in any of eight possible directions.
 Programs are interpreted by following strings of non-blank instructions
 as they wind through memory.  Loops and branches appear as exactly
 that.  The program counter turns to avoid blanks and failing
-instructions.
+instructions. [smalltalk](http://c2.com/~ward/biota/), [javascript](http://c2.com/Biota/JavaScript.html)
 
 New Classes
 -----------
@@ -30,7 +30,7 @@ biota.  Includes a loader and debugger.  A class method constructs
 an instruction dispatch table from a method dictionary.
 
 The loader expects data in odd numbered columns and control characters
-in the others.  '�' marks the initial program counter; '' the initial
+in the others.  '$' marks the initial program counter; '#' the initial
 data pointer.  (Use cut and paste to type these characters.)
 
 The debugger will single step with each press of the space bar.  Press
@@ -53,4 +53,15 @@ New Methods
 
 Point offset -- Computes the byte offset in a linear memory (i.e. a string)
 corresponding to a given point.
-              
+
+## Installation
+
+1. Launch [Glamorous Toolkit](https://gtoolkit.com/download/) and open a Playground.
+2. Paste the following lines into the playground and run them
+```
+Metacello new
+    baseline: 'Biota';
+    repository: 'github://RalfBarkow/biota:main/src';
+    load.
+```
+

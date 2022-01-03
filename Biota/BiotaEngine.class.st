@@ -11,6 +11,29 @@ Class {
 	#category : #Biota
 }
 
+{ #category : #accesing }
+BiotaEngine class >> dispatch [
+	| dispatch |
+	dispatch := Array new: 256.
+	self methodDictionary keys do:
+		[:each | 
+		dispatch
+			at: each first asciiValue 
+			put: each].
+	^ dispatch
+]
+
+{ #category : #accessing }
+BiotaEngine >> debug [
+	| c | 
+    [self showMarks. 
+    (c := Terminal read) = $q] whileFalse: 
+        [self hideMarks. 
+        c = $  ifTrue: [self step]. 
+        c = $r ifTrue: [[KeyboardSemaphore hasSignals not] whileTrue: [self step]]. 
+        c = $c ifTrue: [self showMarks. biota capture]]
+]
+
 { #category : #accessing }
 BiotaEngine >> execute: aCharacter [
 	| aSymbol | 
@@ -41,5 +64,19 @@ BiotaEngine >> load: aString [
 
 { #category : #accessing }
 BiotaEngine >> newMethod [
-	"This is a new method"
+	"This idebug 
+ 
+    | c | 
+    [self showMarks. 
+    (c :=Terminal read) = $q] whileFalse: 
+        [self hideMarks. 
+        c = $  ifTrue: [self step]. 
+        c = $r ifTrue: [[KeyboardSemaphore hasSignals not] whileTrue: [self step]]. 
+        c = $c ifTrue: [self showMarks. biota capture]]!s a new method"
+]
+
+{ #category : #accessing }
+BiotaEngine >> showMarks [
+	biota at: data * (2@1) + (1@0) display: ('/\/\' at: data direction + 1).
+	biota at: program * (2@1) + (1@0) display: $�
 ]

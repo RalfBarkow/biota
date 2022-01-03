@@ -86,28 +86,27 @@ TestEngine >> again [
 
 { #category : #accessing }
 TestEngine >> backup [
-		data go: -1. 
-    ^data isEmpty 
-        ifTrue: [data go. false] 
-        ifFalse: [true]
+	data go: -1.
+	^data isEmpty
+		ifTrue: [data go. false]
+		ifFalse: [true]
 ]
 
 { #category : #accessing }
 TestEngine >> clear [
-	^ data isEmpty 
-        ifTrue: [false] 
-        ifFalse: [data contents: Biota empty. true]
+	^ data isEmpty
+		ifTrue: [false]
+		ifFalse: [data contents: Biota empty. true]
 ]
 
 { #category : #accessing }
-TestEngine >> duplicate [ 
- 
-    | aPoint | 
-    data isEmpty ifTrue: [^false]. 
-    aPoint := data copy turn: -2; go. 
-    ^ aPoint isEmpty 
-        ifTrue: [aPoint contents: data contents. true] 
-        ifFalse: [false]
+TestEngine >> duplicate [
+	| aPoint |
+	data isEmpty ifTrue: [^false].
+	aPoint := data copy turn: -2; go.
+	^ aPoint isEmpty
+		ifTrue: [aPoint contents: data contents. true]
+		ifFalse: [false]
 ]
 
 { #category : #accessing }
@@ -115,39 +114,55 @@ TestEngine >> execute: anObject [
 ]
 
 { #category : #accessing }
-TestEngine >> go [ 
- 
-    data in: biota fullDo: 
-        [:c |  ^true]. 
-    ^false
+TestEngine >> face [
+	data turnAlong: biota.
+	^true
 ]
 
 { #category : #accessing }
-TestEngine >> home [ 
- 
-    data := program copy. 
-    ^ true
+TestEngine >> go [
+	data in: biota fullDo:
+		[:c |  ^true].
+	^false
 ]
 
 { #category : #accessing }
-TestEngine >> quit [ 
- 
-    KeyboardSemaphore signal. 
-    ^true
+TestEngine >> home [
+	data := program copy.
+	^ true
 ]
 
 { #category : #accessing }
-TestEngine >> ruplicate [ 
- 
-    | aPoint | 
-    aPoint := data copy turnAway: biota; go. 
-    ^ aPoint isEmpty 
-        ifTrue: [aPoint contents: data contents. true] 
-        ifFalse: [false]
+TestEngine >> quit [
+	KeyboardSemaphore signal.
+	^true
+]
+
+{ #category : #accessing }
+TestEngine >> ruplicate [
+	| aPoint |
+	aPoint := data copy turnAway: biota; go.
+	^ aPoint isEmpty 
+		ifTrue: [aPoint contents: data contents. true]
+		ifFalse: [false]
+]
+
+{ #category : #accessing }
+TestEngine >> straight [
+	data go.
+	^data isEmpty
+		ifTrue: [data go: -1. false]
+		ifFalse: [true]
 ]
 
 { #category : #accessing }
 TestEngine >> turn [
-	data turn: 1. 
-    ^ true
+	data turn: 1.
+	^ true
+]
+
+{ #category : #accessing }
+TestEngine >> unturn [
+	data turn: -1.
+	^ true
 ]

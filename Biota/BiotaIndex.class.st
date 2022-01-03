@@ -14,8 +14,8 @@ BiotaIndex >> biota: aBiota [
 ]
 
 { #category : #accessing }
-BiotaIndex >> contents [ 
-    ^biota at: self
+BiotaIndex >> contents [
+	^biota at: self
 ]
 
 { #category : #accessing }
@@ -35,37 +35,37 @@ BiotaIndex >> direction: anInteger [
 
 { #category : #accessing }
 BiotaIndex >> go [
-	x := x + (#(0 1 1 1 0 -1 -1 -1) at: direction + 1) \\ Biota width. 
-    y := y + (#(-1 -1 0 1 1 1 0 -1) at: direction + 1) \\ Biota height
+	x := x + (#(0 1 1 1 0 -1 -1 -1) at: direction + 1) \\ Biota width.
+	y := y + (#(-1 -1 0 1 1 1 0 -1) at: direction + 1) \\ Biota height
 ]
 
 { #category : #accessing }
 BiotaIndex >> go: anInteger [
-	x := x + (anInteger * (#(0 1 1 1 0 -1 -1 -1) at: direction + 1)) \\ Biota width. 
-    y := y + (anInteger * (#(-1 -1 0 1 1 1 0 -1) at: direction + 1)) \\ Biota height
+	x := x + (anInteger * (#(0 1 1 1 0 -1 -1 -1) at: direction + 1)) \\ Biota width.
+	y := y + (anInteger * (#(-1 -1 0 1 1 1 0 -1) at: direction + 1)) \\ Biota height
 ]
 
 { #category : #accessing }
 BiotaIndex >> in: aBiota do: aBlock [
 	#(0 1 -1 2 -2 3 -3 4) do: 
-        [:each | 
-        self turn: each; go. 
-        aBlock value: self contents. 
-        self go: -1; turn: each negated]
+		[:each |
+			self turn: each; go. 
+			aBlock value: self contents.
+			self go: -1; turn: each negated]
 ]
 
 { #category : #accessing }
 BiotaIndex >> in: aBiota emptyDo: aBlock [
-	self in: aBiota do: 
-        [:each | each = Biota empty ifTrue: 
-            [aBlock value: each]]
+	self in: aBiota do:
+		[:each | each = Biota empty ifTrue: 
+			[aBlock value: each]]
 ]
 
 { #category : #accessing }
 BiotaIndex >> in: aBiota fullDo: aBlock [
-	self in: aBiota do: 
-        [:each | each = Biota empty ifFalse: 
-            [aBlock value: each]]
+	self in: aBiota do:
+		[:each | each = Biota empty ifFalse:
+			[aBlock value: each]]
 ]
 
 { #category : #accessing }
@@ -75,17 +75,17 @@ BiotaIndex >> isEmpty [
 
 { #category : #accessing }
 BiotaIndex >> turn: anInteger [
-	direction := direction + anInteger \\ 8
+	direction := direction + anInteger \\ 8.
 ]
 
 { #category : #accessing }
 BiotaIndex >> turnAlong: aBiota [
-self in: aBiota fullDo: 
-        [:c | self go: -1. ^self]
+	self in: aBiota fullDo:
+		[:c | self go: -1. ^self]
 ]
 
 { #category : #accessing }
 BiotaIndex >> turnAway: aBiota [
 	self in: aBiota emptyDo: 
-        [:c | self go: -1. ^self]
+		[:c | self go: -1. ^self].
 ]

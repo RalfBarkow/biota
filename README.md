@@ -9,7 +9,7 @@ that can be incremented in any of eight possible directions.
 Programs are interpreted by following strings of non-blank instructions
 as they wind through memory.  Loops and branches appear as exactly
 that.  The program counter turns to avoid blanks and failing
-instructions.
+instructions. [smalltalk](http://c2.com/~ward/biota/), [javascript](http://c2.com/Biota/JavaScript.html)
 
 New Classes
 -----------

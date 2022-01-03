@@ -1,5 +1,7 @@
 "
 An experimental biota engine with twelve instructions. Class methods answer sample programs written for this engine.
+
+The instructions 't' and 'u' turn right and left. 's' and 'b' step forward and backward. 'd' and 'r' duplicate data, 'r' more aggressively. 'c' clears data to blank. 'f' faces the data pointer at the nearest data while 'h' alignes it with the program counter. 'g' combines 'f' and 's'. 'a' and 'q' are obsolete and should be avoided.
 "
 Class {
 	#name : #TestEngine,

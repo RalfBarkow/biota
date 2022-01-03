@@ -15,6 +15,6 @@ BaselineOfBiota >> baseline: spec [
 			
 		spec package: 'Biota'.
 		spec package: 'PackageTwo' with: [ 
-			spec requieres: #( 'ExternalProject' 'Biota' ) ]
+			spec requires: #( 'ExternalProject' 'Biota' ) ]
 	]
 ]

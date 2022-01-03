@@ -56,7 +56,7 @@ corresponding to a given point.
 
 ## Installation
 
-1. Launch Glamorous Toolkit and open a Playground.
+1. Launch [Glamorous Toolkit](https://gtoolkit.com/download/) and open a Playground.
 2. Paste the following lines into the playground and run them
 ```
 Metacello new

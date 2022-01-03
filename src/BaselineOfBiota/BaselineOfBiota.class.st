@@ -8,13 +8,6 @@ Class {
 BaselineOfBiota >> baseline: spec [
 	
 	<baseline>
-	spec for: #'common' do: [
-	
-		spec baseline: 'ExternalProject' with: [
-			spec repository: 'github://<organization>/<repository>:main/src' ].
-			
-		spec package: 'Biota'.
-		spec package: 'PackageTwo' with: [ 
-			spec requires: #( 'ExternalProject' 'Biota' ) ]
-	]
+	spec for: #'common' do: [			
+		spec package: 'Biota' ]
 ]

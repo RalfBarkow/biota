@@ -1,7 +1,7 @@
 "
 A processor that can interpret programs stored in a biota. Includes a loader and debugger. A class method constructs an instruction dispatch table from a method dictionary.
 
-The loader expects data in odd numbered columns and control characters in the others. '�' marks the initial program counter; '�' the initial data pointer. (Use cut and paste to type these characters.)
+The loader expects data in odd numbered columns and control characters in the others. '$' marks the initial program counter; '#' the initial data pointer. (Use cut and paste to type these characters.)
 
 The debugger will single step with each press of the space bar. Press and hold 'r' to run at high speed. 'q' will quit. (Collapse or frame all windows to the bottom inch of the display before running. Redraw screen when finished.)
 "

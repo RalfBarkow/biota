@@ -11,7 +11,24 @@ as they wind through memory.  Loops and branches appear as exactly
 that.  The program counter turns to avoid blanks and failing
 instructions. [smalltalk](http://c2.com/~ward/biota/), [javascript](http://c2.com/Biota/JavaScript.html)
 
-New Classes
+## Installation
+
+1. Launch [Glamorous Toolkit](https://gtoolkit.com/download/) and open a Playground.
+2. Paste the following lines into the playground and run them (Evalute):
+```
+Metacello new
+    baseline: 'Biota';
+    repository: 'github://RalfBarkow/biota:main/src';
+    load.
+```
+
+And then load the documentation in Glamorous Toolkit:
+
+```
+BaselineOfBiota loadLepiter
+```
+
+Classes
 -----------
 
 Biota -- A two dimensional space, addressed by points, which stores
@@ -48,20 +65,4 @@ data while 'h' alignes it with the program counter.  'g' combines 'f'
 and 's'.  'a' and 'q' are obsolete and should be avoided.
 
   
-New Methods
------------
-
-Point offset -- Computes the byte offset in a linear memory (i.e. a string)
-corresponding to a given point.
-
-## Installation
-
-1. Launch [Glamorous Toolkit](https://gtoolkit.com/download/) and open a Playground.
-2. Paste the following lines into the playground and run them
-```
-Metacello new
-    baseline: 'Biota';
-    repository: 'github://RalfBarkow/biota:main/src';
-    load.
-```
 

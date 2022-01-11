@@ -12,8 +12,8 @@ BaselineOfBiota class >> loadLepiter [
 		addRegisteredDirectory: FileLocator imageDirectory
 			/ 'pharo-local'
 			/ 'iceberg'
-			/ 'feenkcom'
-			/ 'gt4edx'
+			/ 'RalfBarkow'
+			/ 'biota'
 			/ 'lepiter'.
 	
 	LeDatabasesRegistry default defaultLogicalDatabase reload.

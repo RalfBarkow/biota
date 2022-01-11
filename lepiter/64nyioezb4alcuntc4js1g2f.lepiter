@@ -473,7 +473,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-01-01T15:20:24.717747+01:00"
+												"dateAndTimeString" : "2022-01-11T19:10:26.408162+01:00"
 											}
 										},
 										"uid" : {
@@ -483,7 +483,7 @@
 										"paragraphStyle" : {
 											"__type" : "textStyle"
 										},
-										"string" : "The loader expects data in odd numbered columns and control characters in the others. '�' marks the initial program counter; '\u001A' the initial data pointer. (Use cut and paste to type these characters.)\n\nThe debugger will single step with each press of the space bar. Press and hold 'r' to run at high speed. 'q' will quit. (Collapse or frame all windows to the bottom inch of the display before running. Redraw screen when finished.)\n\nTestEngine -- An experimental biota engine with twelve instructions. Class methods answer sample programs written for this engine."
+										"string" : "The loader expects data in odd numbered columns and control characters in the others. '$' marks the initial program counter; '#' the initial data pointer. (Use cut and paste to type these characters.)\n\nThe debugger will single step with each press of the space bar. Press and hold 'r' to run at high speed. 'q' will quit. (Collapse or frame all windows to the bottom inch of the display before running. Redraw screen when finished.)\n\nTestEngine -- An experimental biota engine with twelve instructions. Class methods answer sample programs written for this engine."
 									}
 								]
 							},

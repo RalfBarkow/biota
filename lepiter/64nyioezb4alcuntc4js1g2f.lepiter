@@ -29,7 +29,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-04T23:03:18.181054+01:00"
+						"dateAndTimeString" : "2022-01-11T10:17:42.392211+01:00"
 					}
 				},
 				"uid" : {
@@ -39,7 +39,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "[wiki](https://wiki.ralfbarkow.ch/view/the-biota-computer) [github](https://github.com/RalfBarkow/biota)"
+				"string" : "[wiki](http://code.fed.wiki.org/view/biota/view/biota-flagellum), [github](https://github.com/RalfBarkow/biota)"
 			},
 			{
 				"__type" : "textSnippet",

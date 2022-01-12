@@ -1,0 +1,596 @@
+{
+	"__schema" : "4.1",
+	"__type" : "page",
+	"children" : {
+		"__type" : "snippets",
+		"items" : [
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-11T21:23:25.193008+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-12T06:14:16.561915+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Ico79rWRDQC2M6+6DkamDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[A beginner question …](http://computer-programming-forum.com/3-smalltalk/cbc89f460f9e1300.htm)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-12T06:14:58.117134+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-12T06:16:25.347556+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "jUhFY72RDQC2SNstDkamDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "[…] there is some compatibility between ParcPlace Smalltalk\nand Digitalk Smalltalk. Last year [1995] John Keena ordered a document from IBM titled\n\"Smalltalk Portability: A Common Base\" which he understands was used as the\ninitial kick-start to the ANSI Smalltalk effort. "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-01-12T06:52:39.285939+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-01-12T06:52:39.285939+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "lMMC6r2RDQC2V8cPDkamDA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "https://www.ibm.com/support/pages/system/files/support/swg/swgdocs.nsf/0/f443d51d7cc38f5685256ab8004f1a23/%24FILE/stpr55.pdf"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-01-11T21:25:04.874877+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-01-11T21:25:04.874877+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "HwA//LWRDQC2NPN+DkamDA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Giffin Lorimer, Dieter Neumann, Rick DeNatale, and Yen-Ping Shan, Smalltalk\nPortability: A Common Base (the ′′Red Book′′), IBM International Technical Support\nCenters, 1992, GG24-3903 (proposed as a draft ANSI Smalltalk standard)"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-12T06:16:40.230053+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-12T06:56:49.869009+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "oqRYab2RDQC2Sx4aDkamDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Cited in this [pdf](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi2_py4u6v1AhWD-KQKHaccBPEQFnoECAsQAQ&url=https%3A%2F%2Fwww.ibm.com%2Fsupport%2Fpages%2Fsystem%2Ffiles%2Fsupport%2Fswg%2Fswgdocs.nsf%2F0%2Ff443d51d7cc38f5685256ab8004f1a23%2F%2524FILE%2Fstpr55.pdf&usg=AOvVaw3BNKVCiCZuNjhaIqOnlD9A)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-12T06:58:25.834273+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-12T06:59:02.111392+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "o7uu/r2RDQC2XnMfDkamDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "This document describes the \"common base\" between the variants of Smalltalk. It documents the language structure, syntax, etc, and the following classes: Array, Association, Boolean, Character, Class & MetaClass, Dictionary, Float, Fraction, IdentityDictionary, Integer, Interval, OrderedCollection, Point, ReadStream, ReadWriteStream, Rectangle, Set, SortedCollection, Stream, String, Symbol, and WriteStream."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-12T06:59:38.116538+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-12T07:00:26.633038+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "0UP/Ar6RDQC2Y+hkDkamDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Personally John Keenan finds this document to be an excellent reference. It documents the _behavior_ of the classes with no regard to the underlying hierarchy or method implementation that the different vendors might use to implement these classes. \"I find that I still grab it first when I am needing a reference.\" "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-11T21:41:59.412348+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-11T21:41:59.412348+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "CM2/OLaRDQC2QDcqDkamDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "**Problem**: "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-11T21:41:02.012787+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-11T21:41:59.431738+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "FUQ+NbaRDQC2PaYeDkamDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "Class that forwards to Class>>#subclass:…"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-11T21:43:22.687568+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-12T07:02:52.052949+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "/vCsPbaRDQC2QdMMDkamDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "To handle this common problem that arises when loading old or cross-dialects\nlibraries."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-11T21:41:46.522651+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-11T21:41:54.036238+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "6Cn7N7aRDQC2PzEnDkamDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "**Therefore** : "
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-11T21:41:21.144784+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-11T21:41:31.142089+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "mBBwNraRDQC2PiwBDkamDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "First-Class Undefined Classes for Pharo [pdf](https://hal.archives-ouvertes.fr/hal-01585305/document)"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-01-12T07:02:01.563694+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-01-12T07:02:14.077908+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "YHiPC76RDQC2aXksDkamDA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Just define the following methods (in ST/V)\n\n\"-- -- begin -- --\"\n\nClass>>subclass: c instanceVariableNames: iv classVariableNames: cv\n  poolDictionaries: pd category: dontCare\n    \"ST-80 subclassing: ignore category name\"\n    ^self\n        subclass: c\n        instanceVariableNames: iv\n        classVariableNames: cv\n        poolDictionaries: pd\n\nClass>>comment: commentString\n    \"ST-80 class comment: ignore\"\n    \"do nothing\"\n\nMetaclass>>instanceVariableNames: dontCare\n    \"ST-80 class instance variables names: ignore\"\n    \"do nothing\"\n\nBehavior>>methodsFor: dontCare\n    \"ST-80 class/metaclass methods: ignore protocol names\"\n    ^self methods\n\n\"-- -- end -- --\"\n\nand it will read ST-80 fileouts. (I didn't actually test this code,\nbut here's the idea). You can use a similar approach to make ST-80\nread ST/V fileout by placing all classes in some default category,\nand all methods in some default protocol.\n\n--Vassili\n"
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-12T07:01:32.268639+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-12T07:03:17.712985+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "pyfNCb6RDQC2ZghsDkamDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "and Vassili Byko (1996) in above mentioned [A beginner question …](http://computer-programming-forum.com/3-smalltalk/cbc89f460f9e1300.htm) post:"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-11T21:40:41.909593+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-11T21:40:41.909593+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "oUUhNLaRDQC2O/+PDkamDA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : ""
+			}
+		]
+	},
+	"createEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"createTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-01-11T21:23:23.460005+01:00"
+		}
+	},
+	"editEmail" : {
+		"__type" : "email",
+		"emailString" : "<unknown>"
+	},
+	"editTime" : {
+		"__type" : "time",
+		"time" : {
+			"__type" : "dateAndTime",
+			"dateAndTimeString" : "2022-01-11T21:23:40.075349+01:00"
+		}
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Smalltalk Portability: A Common Base"
+	},
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "a0c83bf6-b591-0d00-b632-52940e46a60c"
+	}
+}

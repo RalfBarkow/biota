@@ -1,6 +1,6 @@
 
 # The Biota Computer
-by Ward Cunningham
+by Ward Cunningham [github](https://github.com/WardCunningham)
 
 
 Biota is a simulation of an imaginary computer with some unusual

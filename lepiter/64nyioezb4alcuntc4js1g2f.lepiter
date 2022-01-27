@@ -1,6 +1,14 @@
 {
 	"__schema" : "4.1",
 	"__type" : "page",
+	"uid" : {
+		"__type" : "uuid",
+		"uuid" : "970f29b1-e490-0d00-ab0b-b5f90742e002"
+	},
+	"pageType" : {
+		"__type" : "namedPage",
+		"title" : "Biota"
+	},
 	"children" : {
 		"__type" : "snippets",
 		"items" : [
@@ -84,7 +92,7 @@
 					"__type" : "snippets",
 					"items" : [
 						{
-							"__type" : "pharoSnippet",
+							"__type" : "textSnippet",
 							"children" : {
 								"__type" : "snippets",
 								"items" : [ ]
@@ -97,7 +105,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-01-11T08:13:31.977004+01:00"
+									"dateAndTimeString" : "2022-01-27T16:15:49.596259+01:00"
 								}
 							},
 							"editEmail" : {
@@ -108,14 +116,17 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-01-11T08:13:38.516889+01:00"
+									"dateAndTimeString" : "2022-01-27T16:15:49.596259+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "viV77aqRDQCvmN3sCsuT9w=="
+								"uidString" : "WiXCh/OSDQCpUyULDsBNOA=="
 							},
-							"code" : "Metacello new\n    baseline: 'Biota';\n    repository: 'github://RalfBarkow/biota:main/src';\n    load."
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "1. Launch [Glamorous Toolkit](https://gtoolkit.com/download/) and open a Playground."
 						},
 						{
 							"__type" : "textSnippet",
@@ -136,7 +147,7 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-01-11T08:07:17.411051+01:00"
+												"dateAndTimeString" : "2022-01-11T08:13:31.977004+01:00"
 											}
 										},
 										"editEmail" : {
@@ -147,14 +158,86 @@
 											"__type" : "time",
 											"time" : {
 												"__type" : "dateAndTime",
-												"dateAndTimeString" : "2022-01-11T08:07:26.120933+01:00"
+												"dateAndTimeString" : "2022-01-11T08:13:38.516889+01:00"
 											}
 										},
 										"uid" : {
 											"__type" : "uid",
-											"uidString" : "G7kn16qRDQCpj3gwCsuT9w=="
+											"uidString" : "viV77aqRDQCvmN3sCsuT9w=="
 										},
-										"code" : "BaselineOfBiota loadLepiter"
+										"code" : "Metacello new\n    baseline: 'Biota';\n    repository: 'github://RalfBarkow/biota:main/src';\n    load."
+									},
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [
+												{
+													"__type" : "pharoSnippet",
+													"children" : {
+														"__type" : "snippets",
+														"items" : [ ]
+													},
+													"createEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"createTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2022-01-11T08:07:17.411051+01:00"
+														}
+													},
+													"editEmail" : {
+														"__type" : "email",
+														"emailString" : "<unknown>"
+													},
+													"editTime" : {
+														"__type" : "time",
+														"time" : {
+															"__type" : "dateAndTime",
+															"dateAndTimeString" : "2022-01-11T08:07:26.120933+01:00"
+														}
+													},
+													"uid" : {
+														"__type" : "uid",
+														"uidString" : "G7kn16qRDQCpj3gwCsuT9w=="
+													},
+													"code" : "BaselineOfBiota loadLepiter"
+												}
+											]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-01-11T08:07:10.053789+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-01-11T08:07:10.053789+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "veCs1qqRDQCpjpQXCsuT9w=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "And then load the documentation in Glamorous Toolkit:"
 									}
 								]
 							},
@@ -166,7 +249,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-01-11T08:07:10.053789+01:00"
+									"dateAndTimeString" : "2022-01-03T18:53:36.632342+01:00"
 								}
 							},
 							"editEmail" : {
@@ -177,17 +260,92 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-01-11T08:07:10.053789+01:00"
+									"dateAndTimeString" : "2022-01-27T16:15:49.613072+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "veCs1qqRDQCpjpQXCsuT9w=="
+								"uidString" : "u6bY7xKRDQCVn5cQD0HSMQ=="
 							},
 							"paragraphStyle" : {
 								"__type" : "textStyle"
 							},
-							"string" : "And then load the documentation in Glamorous Toolkit:"
+							"string" : "2. Paste the following lines into the playground and run them (Evalute):"
+						},
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [
+									{
+										"__type" : "textSnippet",
+										"children" : {
+											"__type" : "snippets",
+											"items" : [ ]
+										},
+										"createEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"createTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-01-27T16:24:21.574158+01:00"
+											}
+										},
+										"editEmail" : {
+											"__type" : "email",
+											"emailString" : "<unknown>"
+										},
+										"editTime" : {
+											"__type" : "time",
+											"time" : {
+												"__type" : "dateAndTime",
+												"dateAndTimeString" : "2022-01-27T16:24:21.574158+01:00"
+											}
+										},
+										"uid" : {
+											"__type" : "uid",
+											"uidString" : "Xh1NpfOSDQCpaAPRDsBNOA=="
+										},
+										"paragraphStyle" : {
+											"__type" : "textStyle"
+										},
+										"string" : "{{gtPage:biota.st|db=ennp7x0o8qal72twol4w0h2q8}}"
+									}
+								]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-01-27T16:13:46.543491+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-01-27T16:17:06.936347+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "0SObevOSDQCpSZmRDsBNOA=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "3. {{gtPage:Parsing Old Biota Sources|db=ennp7x0o8qal72twol4w0h2q8}}"
 						}
 					]
 				},
@@ -199,7 +357,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-03T18:53:36.632342+01:00"
+						"dateAndTimeString" : "2022-01-27T16:15:43.738849+01:00"
 					}
 				},
 				"editEmail" : {
@@ -210,17 +368,54 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-11T09:36:02.529321+01:00"
+						"dateAndTimeString" : "2022-01-27T16:16:08.749392+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "u6bY7xKRDQCVn5cQD0HSMQ=="
+					"uidString" : "QMNoh/OSDQCpUrtODsBNOA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "## Installation\n\n1. Launch [Glamorous Toolkit](https://gtoolkit.com/download/) and open a Playground.\n2. Paste the following lines into the playground and run them (Evalute):"
+				"string" : "## Installation"
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [ ]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-27T16:17:57.235354+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-27T16:17:57.235354+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "mcNdj/OSDQCpW6/NDsBNOA=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "# Classes"
 			},
 			{
 				"__type" : "textSnippet",
@@ -271,7 +466,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-01T15:00:20.951432+01:00"
+						"dateAndTimeString" : "2022-01-27T16:17:52.654205+01:00"
 					}
 				},
 				"editEmail" : {
@@ -282,89 +477,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-11T09:36:02.530417+01:00"
+						"dateAndTimeString" : "2022-01-27T16:17:57.248919+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "WL70ceeQDQCrFB/OB0LgAg=="
+					"uidString" : "Q98Xj/OSDQCpWn27DsBNOA=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "# Classes\n\nBiota -- A two dimensional space, addressed by points, which stores the characters that are biota programs and data. Class methods define the size of the space and a single character, called empty, that marks unused cells."
-			},
-			{
-				"__type" : "textSnippet",
-				"children" : {
-					"__type" : "snippets",
-					"items" : [
-						{
-							"__type" : "pharoSnippet",
-							"children" : {
-								"__type" : "snippets",
-								"items" : [ ]
-							},
-							"createEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"createTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-01-01T15:22:41.560894+01:00"
-								}
-							},
-							"editEmail" : {
-								"__type" : "email",
-								"emailString" : "<unknown>"
-							},
-							"editTime" : {
-								"__type" : "time",
-								"time" : {
-									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-01-01T15:22:48.408069+01:00"
-								}
-							},
-							"uid" : {
-								"__type" : "uid",
-								"uidString" : "fN3cweeQDQCm66wGBATrAg=="
-							},
-							"code" : "DisplayBiota"
-						}
-					]
-				},
-				"createEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"createTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-01T15:22:36.855441+01:00"
-					}
-				},
-				"editEmail" : {
-					"__type" : "email",
-					"emailString" : "<unknown>"
-				},
-				"editTime" : {
-					"__type" : "time",
-					"time" : {
-						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-01T15:22:36.855441+01:00"
-					}
-				},
-				"uid" : {
-					"__type" : "uid",
-					"uidString" : "CwGVweeQDQCm6qT8BATrAg=="
-				},
-				"paragraphStyle" : {
-					"__type" : "textStyle"
-				},
-				"string" : "DisplayBiota -- A kind of biota that echos it's modifications the computer display."
+				"string" : "Biota -- A two dimensional space, addressed by points, which stores the characters that are biota programs and data. Class methods define the size of the space and a single character, called empty, that marks unused cells."
 			},
 			{
 				"__type" : "textSnippet",
@@ -437,6 +560,81 @@
 					"__type" : "textStyle"
 				},
 				"string" : "BiotaIndex -- A kind of point that includes a direction and responds to turtle style protocol (go, turn)."
+			},
+			{
+				"__type" : "textSnippet",
+				"children" : {
+					"__type" : "snippets",
+					"items" : [
+						{
+							"__type" : "textSnippet",
+							"children" : {
+								"__type" : "snippets",
+								"items" : [ ]
+							},
+							"createEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"createTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-01-04T23:04:11.24566+01:00"
+								}
+							},
+							"editEmail" : {
+								"__type" : "email",
+								"emailString" : "<unknown>"
+							},
+							"editTime" : {
+								"__type" : "time",
+								"time" : {
+									"__type" : "dateAndTime",
+									"dateAndTimeString" : "2022-01-04T23:04:46.974592+01:00"
+								}
+							},
+							"uid" : {
+								"__type" : "uid",
+								"uidString" : "y8g4jSqRDQCiPxVeAc60xw=="
+							},
+							"paragraphStyle" : {
+								"__type" : "textStyle"
+							},
+							"string" : "Many instructions just move the data counter (DC) [page](https://wiki.c2.com/?BiotaLanguage)\n\n    s -- straight: move DC in the current direction. Fail if that cell is empty.\n    b -- backup: move DC opposite the current direction. Fail if that cell is empty.\n    t -- turn DC right 45 degrees\n    u -- unturn: turn DC left 45 degrees\n    g -- go to a non-empty character ahead (tries to move DC straight ahead, then right and left 45 degrees, then 90, then 135, then back).\n\nOther instructons write to the memory at or near the data counter\n\n    c -- clear character at DC. Fails if already empty.\n    d -- duplicate the current data into the cell left of the DC. Fails if source cell is empty or target cell is non-empty.\n\nOne instruction exists only to connect instructions into loops that the program counter follows\n\n    . -- no-op, a non-empty do nothing. "
+						}
+					]
+				},
+				"createEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"createTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-04T23:02:37.468583+01:00"
+					}
+				},
+				"editEmail" : {
+					"__type" : "email",
+					"emailString" : "<unknown>"
+				},
+				"editTime" : {
+					"__type" : "time",
+					"time" : {
+						"__type" : "dateAndTime",
+						"dateAndTimeString" : "2022-01-04T23:02:37.468583+01:00"
+					}
+				},
+				"uid" : {
+					"__type" : "uid",
+					"uidString" : "Lxc7iCqRDQCiPAZGAc60xw=="
+				},
+				"paragraphStyle" : {
+					"__type" : "textStyle"
+				},
+				"string" : "The instructions 't' and 'u' turn right and left. 's' and 'b' step forward and backward. 'd' and 'r' duplicate data, 'r' more aggressively. 'c' clears data to blank. 'f' faces the data pointer at the nearest data while 'h' alignes it with the program counter. 'g' combines 'f' and 's'. 'a' and 'q' are obsolete and should be avoided."
 			},
 			{
 				"__type" : "textSnippet",
@@ -588,7 +786,7 @@
 					"__type" : "snippets",
 					"items" : [
 						{
-							"__type" : "textSnippet",
+							"__type" : "pharoSnippet",
 							"children" : {
 								"__type" : "snippets",
 								"items" : [ ]
@@ -601,7 +799,7 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-01-04T23:04:11.24566+01:00"
+									"dateAndTimeString" : "2022-01-01T15:22:41.560894+01:00"
 								}
 							},
 							"editEmail" : {
@@ -612,17 +810,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-01-04T23:04:46.974592+01:00"
+									"dateAndTimeString" : "2022-01-01T15:22:48.408069+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
-								"uidString" : "y8g4jSqRDQCiPxVeAc60xw=="
+								"uidString" : "fN3cweeQDQCm66wGBATrAg=="
 							},
-							"paragraphStyle" : {
-								"__type" : "textStyle"
-							},
-							"string" : "Many instructions just move the data counter (DC) [page](https://wiki.c2.com/?BiotaLanguage)\n\n    s -- straight: move DC in the current direction. Fail if that cell is empty.\n    b -- backup: move DC opposite the current direction. Fail if that cell is empty.\n    t -- turn DC right 45 degrees\n    u -- unturn: turn DC left 45 degrees\n    g -- go to a non-empty character ahead (tries to move DC straight ahead, then right and left 45 degrees, then 90, then 135, then back).\n\nOther instructons write to the memory at or near the data counter\n\n    c -- clear character at DC. Fails if already empty.\n    d -- duplicate the current data into the cell left of the DC. Fails if source cell is empty or target cell is non-empty.\n\nOne instruction exists only to connect instructions into loops that the program counter follows\n\n    . -- no-op, a non-empty do nothing. "
+							"code" : "DisplayBiota"
 						}
 					]
 				},
@@ -634,7 +829,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-04T23:02:37.468583+01:00"
+						"dateAndTimeString" : "2022-01-01T15:22:36.855441+01:00"
 					}
 				},
 				"editEmail" : {
@@ -645,17 +840,17 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-04T23:02:37.468583+01:00"
+						"dateAndTimeString" : "2022-01-01T15:22:36.855441+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
-					"uidString" : "Lxc7iCqRDQCiPAZGAc60xw=="
+					"uidString" : "CwGVweeQDQCm6qT8BATrAg=="
 				},
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "The instructions 't' and 'u' turn right and left. 's' and 'b' step forward and backward. 'd' and 'r' duplicate data, 'r' more aggressively. 'c' clears data to blank. 'f' faces the data pointer at the nearest data while 'h' alignes it with the program counter. 'g' combines 'f' and 's'. 'a' and 'q' are obsolete and should be avoided."
+				"string" : "DisplayBiota -- A kind of biota that echos it's modifications the computer display."
 			},
 			{
 				"__type" : "textSnippet",
@@ -682,7 +877,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-04T23:02:37.486846+01:00"
+						"dateAndTimeString" : "2022-01-27T16:13:11.143314+01:00"
 					}
 				},
 				"uid" : {
@@ -692,7 +887,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "## New Methods\n\nPoint offset -- Computes the byte offset in a linear memory (i.e. a string) corresponding to a given point.\n"
+				"string" : "## New Methods\n\nPoint offset -- Computes the byte offset in a linear memory (i.e. a string) corresponding to a given point."
 			},
 			{
 				"__type" : "textSnippet",
@@ -793,7 +988,7 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-04T22:44:19.208282+01:00"
+						"dateAndTimeString" : "2022-01-27T16:12:15.560301+01:00"
 					}
 				},
 				"uid" : {
@@ -803,7 +998,7 @@
 				"paragraphStyle" : {
 					"__type" : "textStyle"
 				},
-				"string" : "This page is my current best guess at the semantics of Ward Cunningham's Biota language. I would welcome corrections. The source is in biota.js\n"
+				"string" : "This page is my current best guess at the semantics of Ward Cunningham's Biota language. I would welcome corrections. The source is in biota.js"
 			},
 			{
 				"__type" : "textSnippet",
@@ -865,13 +1060,5 @@
 			"__type" : "dateAndTime",
 			"dateAndTimeString" : "2022-01-11T10:22:16.535124+01:00"
 		}
-	},
-	"pageType" : {
-		"__type" : "namedPage",
-		"title" : "Biota"
-	},
-	"uid" : {
-		"__type" : "uuid",
-		"uuid" : "970f29b1-e490-0d00-ab0b-b5f90742e002"
 	}
 }

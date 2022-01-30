@@ -331,14 +331,14 @@
 								"__type" : "time",
 								"time" : {
 									"__type" : "dateAndTime",
-									"dateAndTimeString" : "2022-01-23T06:44:59.46953+01:00"
+									"dateAndTimeString" : "2022-01-30T12:37:28.548235+01:00"
 								}
 							},
 							"uid" : {
 								"__type" : "uid",
 								"uidString" : "DMRfFpuSDQCxenoXDadTDQ=="
 							},
-							"code" : "comment := '\"' asPParser, '\"' asPParser negate star flatten, '\"' asPParser ==> #second.\n\nclassDefinition :=  String lf asPParser, String lf asPParser, String lf asPParser not,'!' asPParser negate plus flatten, '!' asPParser  ==> #fourth.\n\nmethod := String lf asPParser, String lf asPParser, '!' asPParser negate plus flatten, '!' asPParser ==> #third.\nclassMethods := String lf asPParser, String lf asPParser, String lf asPParser, '!' asPParser, '!' asPParser negate plus flatten, '!' asPParser, method star, String space asPParser, '!' asPParser ==> [:t | {t fifth. t seventh} ].\n\nparser := comment, '!' asPParser, classDefinition star, classMethods star\n"
+							"code" : "comment := '\"' asPParser, '\"' asPParser negate star flatten, '\"' asPParser ==> #second.\n\nclassDefinition :=  String lf asPParser, String lf asPParser, String lf asPParser not,'!' asPParser negate plus flatten, '!' asPParser  ==> #fourth.\n\nmethod := String lf asPParser, String lf asPParser, '!' asPParser negate plus flatten, '!' asPParser ==> #third.\rclassName := ' methods' asPParser negate star flatten, ' methods ' asPParser ==> #first.\nclassMethods := String lf asPParser, String lf asPParser, String lf asPParser, '!' asPParser, className, '!' asPParser, method star, String space asPParser, '!' asPParser ==> [:t | {t fifth. t seventh} ].\n\nparser := comment, '!' asPParser, classDefinition star, classMethods star ==> [:t |{t third . t fourth} ]"
 						}
 					]
 				},
@@ -435,14 +435,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-23T07:33:46.946552+01:00"
+						"dateAndTimeString" : "2022-01-30T12:56:32.990122+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "HrEXOZuSDQCxgvENDadTDQ=="
 				},
-				"code" : "parser parse: biotaSt contents."
+				"code" : "result := parser parse: biotaSt contents.\r(result first first: 2) , (result first last: 3) collect: [ :each | \r\tSmalltalk compiler evaluate:\r\t\t(each , ' package: ''BiotaOld''' copyReplaceAll: '#' with: '#Bio') ].\rresult second do: [ :each | \r\t| theClass |\r\ttheClass := Smalltalk compiler evaluate: 'Bio', each first.\r\teach second do: [ :methodSource | theClass compile: methodSource ] ]"
 			},
 			{
 				"__type" : "textSnippet",

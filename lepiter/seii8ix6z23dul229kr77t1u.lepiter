@@ -435,14 +435,14 @@
 					"__type" : "time",
 					"time" : {
 						"__type" : "dateAndTime",
-						"dateAndTimeString" : "2022-01-30T12:56:32.990122+01:00"
+						"dateAndTimeString" : "2022-01-30T13:05:40.699709+01:00"
 					}
 				},
 				"uid" : {
 					"__type" : "uid",
 					"uidString" : "HrEXOZuSDQCxgvENDadTDQ=="
 				},
-				"code" : "result := parser parse: biotaSt contents.\r(result first first: 2) , (result first last: 3) collect: [ :each | \r\tSmalltalk compiler evaluate:\r\t\t(each , ' package: ''BiotaOld''' copyReplaceAll: '#' with: '#Bio') ].\rresult second do: [ :each | \r\t| theClass |\r\ttheClass := Smalltalk compiler evaluate: 'Bio', each first.\r\teach second do: [ :methodSource | theClass compile: methodSource ] ]"
+				"code" : "result := parser parse: biotaSt contents.\r(result first first: 2) , (result first last: 3) collect: [ :each | \r\tSmalltalk compiler evaluate:\r\t\t(each , ' package: ''Biota''' \"copyReplaceAll: '#' with: '#Bio'\") ].\rresult second do: [ :each | \r\t| theClass |\r\ttheClass := Smalltalk compiler evaluate: \"'Bio',\" each first.\r\teach second do: [ :methodSource | theClass compile: methodSource ] ]"
 			},
 			{
 				"__type" : "textSnippet",

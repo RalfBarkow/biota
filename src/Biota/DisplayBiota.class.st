@@ -3,7 +3,7 @@ A kind of biota that echos it's modifications the computer display.
 "
 Class {
 	#name : #DisplayBiota,
-	#superclass : #Object,
+	#superclass : #Biota,
 	#instVars : [
 		'scanner'
 	],
@@ -11,10 +11,11 @@ Class {
 }
 
 { #category : #accessing }
-DisplayBiota >> at: aPoint display: aCharacter [
-	scanner isNil ifTrue: 
+DisplayBiota >> at: aPoint display: aCharacter [ 
+ 
+    scanner isNil ifTrue: 
         [scanner := CharacterScanner new 
-            initialize: Display boundingBox font: BlFont; 
+            initialize: Display boundingBox font: SysFont; 
             setForeColor: 0 backColor: 9]. 
     scanner 
         display: (String with: aCharacter) 
@@ -22,14 +23,16 @@ DisplayBiota >> at: aPoint display: aCharacter [
 ]
 
 { #category : #accessing }
-DisplayBiota >> at: aPoint put: aCharacter [
-	super at: aPoint put: aCharacter. 
+DisplayBiota >> at: aPoint put: aCharacter [ 
+ 
+    super at: aPoint put: aCharacter. 
     self at: aPoint * (2@1) display: aCharacter
 ]
 
 { #category : #accessing }
-DisplayBiota >> capture [
-	| region | 
+DisplayBiota >> capture [ 
+ 
+    | region | 
     region := PointDispatcher 
         rectangleFromUserOfSize: 20@20. 
     (BiColorForm foreColor: 9 backColor: 0) 

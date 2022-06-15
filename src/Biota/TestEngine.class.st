@@ -11,8 +11,8 @@ Class {
 
 { #category : #accessing }
 TestEngine class >> example [
-	<gtExample>
-	TestEngine new
+
+    TestEngine new
         initialize;
         load: TestEngine flagellum;
         run
@@ -20,13 +20,14 @@ TestEngine class >> example [
 
 { #category : #accessing }
 TestEngine class >> flagellum [
-	^'
+
+    ^'
 
         . . c .
         . . s . .
         t   g
         t   t
-        t   . t . .®d
+        t   . t . .?d
         t   s   .     .
         b   .   b . s s .               12 3 4 5
     . s s . b   .   b
@@ -45,7 +46,7 @@ TestEngine class >> remoteGrowth [
     ^' 
  
  
-        g®g 
+        g?g 
       g     r 
       t     g 
         g g 
@@ -65,13 +66,13 @@ TestEngine class >> unlimitedGrowth [
  
  
  
-              ð ð ð ð 
-              ð g g®ð 
-              ð r r ð 
-              ð ð ð ð 
+              ? ? ? ? 
+              ? g g?? 
+              ? r r ? 
+              ? ? ? ? 
  
  
-                                      þ 
+                                      ? 
  
  
  
@@ -80,35 +81,39 @@ TestEngine class >> unlimitedGrowth [
 ]
 
 { #category : #accessing }
-TestEngine >> again [
-	^self execute: 
+TestEngine >> again [ 
+ 
+    ^self execute: 
         (program copy go: -1) 
             contents
 ]
 
 { #category : #accessing }
-TestEngine >> backup [
-	data go: -1.
-	^data isEmpty
-		ifTrue: [data go. false]
-		ifFalse: [true]
+TestEngine >> backup [ 
+ 
+    data go: -1. 
+    ^data isEmpty 
+        ifTrue: [data go. false] 
+        ifFalse: [true]
 ]
 
 { #category : #accessing }
-TestEngine >> clear [
-	^ data isEmpty
-		ifTrue: [false]
-		ifFalse: [data contents: Biota empty. true]
+TestEngine >> clear [ 
+ 
+    ^ data isEmpty 
+        ifTrue: [false] 
+        ifFalse: [data contents: Biota empty. true]
 ]
 
 { #category : #accessing }
-TestEngine >> duplicate [
-	| aPoint |
-	data isEmpty ifTrue: [^false].
-	aPoint := data copy turn: -2; go.
-	^ aPoint isEmpty
-		ifTrue: [aPoint contents: data contents. true]
-		ifFalse: [false]
+TestEngine >> duplicate [ 
+ 
+    | aPoint | 
+    data isEmpty ifTrue: [^false]. 
+    aPoint := data copy turn: -2; go. 
+    ^ aPoint isEmpty 
+        ifTrue: [aPoint contents: data contents. true] 
+        ifFalse: [false]
 ]
 
 { #category : #accessing }
@@ -116,55 +121,63 @@ TestEngine >> execute: anObject [
 ]
 
 { #category : #accessing }
-TestEngine >> face [
-	data turnAlong: biota.
-	^true
+TestEngine >> face [ 
+ 
+    data turnAlong: biota. 
+    ^true
 ]
 
 { #category : #accessing }
-TestEngine >> go [
-	data in: biota fullDo:
-		[:c |  ^true].
-	^false
+TestEngine >> go [ 
+ 
+    data in: biota fullDo: 
+        [:c |  ^true]. 
+    ^false
 ]
 
 { #category : #accessing }
-TestEngine >> home [
-	data := program copy.
-	^ true
+TestEngine >> home [ 
+ 
+    data := program copy. 
+    ^ true
 ]
 
 { #category : #accessing }
-TestEngine >> quit [
-	KeyboardSemaphore signal.
-	^true
+TestEngine >> quit [ 
+ 
+    KeyboardSemaphore signal. 
+    ^true
 ]
 
 { #category : #accessing }
-TestEngine >> ruplicate [
-	| aPoint |
-	aPoint := data copy turnAway: biota; go.
-	^ aPoint isEmpty 
-		ifTrue: [aPoint contents: data contents. true]
-		ifFalse: [false]
+TestEngine >> ruplicate [ 
+ 
+    | aPoint | 
+    aPoint := data copy turnAway: biota; go. 
+    ^ aPoint isEmpty 
+        ifTrue: [aPoint contents: data contents. true] 
+        ifFalse: [false]
 ]
 
 { #category : #accessing }
-TestEngine >> straight [
-	data go.
-	^data isEmpty
-		ifTrue: [data go: -1. false]
-		ifFalse: [true]
+TestEngine >> straight [ 
+ 
+    data go. 
+    ^data isEmpty 
+        ifTrue: [data go: -1. false] 
+        ifFalse: [true]
 ]
 
 { #category : #accessing }
-TestEngine >> turn [
-	data turn: 1.
-	^ true
+TestEngine >> turn [ 
+ 
+    data turn: 1. 
+    ^ true
 ]
 
 { #category : #accessing }
-TestEngine >> unturn [
-	data turn: -1.
-	^ true
+TestEngine >> unturn [ 
+ 
+    data turn: -1. 
+    ^ true
 ]

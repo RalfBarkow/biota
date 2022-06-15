@@ -19,22 +19,24 @@ Class {
 }
 
 { #category : #accesing }
-BiotaEngine class >> dispatch [
-	| dispatch |
-	dispatch := Array new: 256.
-	self methodDictionary keys do:
-		[:each | 
-		dispatch
-			at: each first asciiValue 
-			put: each].
-	^ dispatch
+BiotaEngine class >> dispatch [ 
+ 
+    | dispatch | 
+    dispatch := Array new: 256. 
+    self methodDictionary keys do: 
+        [:each | 
+        dispatch 
+            at: each first asciiValue 
+            put: each]. 
+    ^ dispatch
 ]
 
 { #category : #accessing }
-BiotaEngine >> debug [
-	| c | 
+BiotaEngine >> debug [ 
+ 
+    | c | 
     [self showMarks. 
-    (c := Terminal read) = $q] whileFalse: 
+    (c :=Terminal read) = $q] whileFalse: 
         [self hideMarks. 
         c = $  ifTrue: [self step]. 
         c = $r ifTrue: [[KeyboardSemaphore hasSignals not] whileTrue: [self step]]. 
@@ -42,17 +44,35 @@ BiotaEngine >> debug [
 ]
 
 { #category : #accessing }
-BiotaEngine >> execute: aCharacter [
-	| aSymbol | 
+BiotaEngine >> execute: aCharacter [ 
+ 
+    | aSymbol | 
     aSymbol := dispatch at: aCharacter asciiValue. 
     ^ aSymbol notNil 
         ifTrue: [self perform: aSymbol] 
         ifFalse: [aCharacter = $.]
 ]
 
+{ #category : #'as yet unclassified' }
+BiotaEngine >> hideMarks [ 
+ 
+    biota at: data * (2@1) + (1@0) display: $ . 
+    biota at: program * (2@1) + (1@0) display: $ .
+]
+
+{ #category : #'as yet unclassified' }
+BiotaEngine >> initialize [ 
+ 
+    biota := DisplayBiota new initialize. 
+    program := BiotaIndex new x: 0; y: 0; direction: 2; biota: biota. 
+    data := program copy. 
+    dispatch := self class dispatch
+]
+
 { #category : #accessing }
-BiotaEngine >> load: aString [
-	| column  row  pos | 
+BiotaEngine >> load: aString [ 
+ 
+    | column  row  pos | 
     row := data copy. 
     column := data copy turn: 2. 
     pos := 0. 
@@ -62,11 +82,21 @@ BiotaEngine >> load: aString [
             [row := column go copy turn: -2.  pos := 0]. 
         (pos odd) ifTrue: 
             [biota at: row put: each. row go]. 
-        (each = $®) ifTrue: 
+        (each = $?) ifTrue: 
             [program := row copy go: -1]. 
         ('/\/\' includes: each) ifTrue: 
             [data := row copy go: -1. 
             data direction: ('/\/\' indexOf: each) - 1]]
+]
+
+{ #category : #'as yet unclassified' }
+BiotaEngine >> mutate [ 
+ 
+    | s  i | 
+    i := dispatch at: (biota at: program) asciiValue. 
+    s := dispatch select: #notNil. 
+    i := s at: (s indexOf: i) \\ s size + 1. 
+    biota at: program put: i first
 ]
 
 { #category : #accessing }
@@ -82,8 +112,24 @@ BiotaEngine >> newMethod [
         c = $c ifTrue: [self showMarks. biota capture]]!s a new method"
 ]
 
+{ #category : #'as yet unclassified' }
+BiotaEngine >> run [
+
+    [true] whileTrue:
+        [self step]
+]
+
 { #category : #accessing }
-BiotaEngine >> showMarks [
-	biota at: data * (2@1) + (1@0) display: ('/\/\' at: data direction + 1).
-	biota at: program * (2@1) + (1@0) display: $�
+BiotaEngine >> showMarks [ 
+ 
+    biota at: data * (2@1) + (1@0) display: ('/\/\' at: data direction + 1). 
+    biota at: program * (2@1) + (1@0) display: $?
+]
+
+{ #category : #'as yet unclassified' }
+BiotaEngine >> step [ 
+ 
+    program in: biota do: 
+        [:c | (self execute: c) ifTrue: [^self]]. 
+    program turnAlong: biota; go
 ]

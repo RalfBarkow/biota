@@ -11,38 +11,44 @@ Class {
 }
 
 { #category : #accessing }
-Biota class >> empty [
-	^$ .
-
+Biota class >> empty [ 
+ 
+    ^$ .
 ]
 
 { #category : #accessing }
-Biota class >> height [
-	^ 24
+Biota class >> height [ 
+ 
+    ^ 24
 ]
 
 { #category : #accessing }
-Biota class >> size [
-	^ Biota width * Biota height
+Biota class >> size [ 
+ 
+    ^ Biota width * Biota height
 ]
 
 { #category : #accessing }
-Biota class >> width [
-	^ 40
+Biota class >> width [ 
+ 
+    ^ 40
 ]
 
 { #category : #accessing }
-Biota >> at: aPoint [
-	^medium at: aPoint offset
+Biota >> at: aPoint [ 
+ 
+    ^medium at: aPoint offset
 ]
 
 { #category : #accessing }
-Biota >> at: aPoint put: aCharacter [
-	^medium at: aPoint offset put: aCharacter
+Biota >> at: aPoint put: aCharacter [ 
+ 
+    ^medium at: aPoint offset put: aCharacter
 ]
 
 { #category : #accessing }
-Biota >> initialize [
-	medium := String new: Biota size.
-	medium atAllPut: Biota empty.
+Biota >> initialize [ 
+ 
+    medium := String new: Biota size. 
+    medium atAllPut: Biota empty.
 ]
